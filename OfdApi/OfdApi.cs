@@ -48,7 +48,7 @@ namespace OfdApi
             }
         }
 
-        public static async Task<JObject> GetLastCheck(string AuthTokenOFD, string CompanyInn, string kktSn, string FnSn, string RegNumber)
+        public static async Task<JObject> GetKktInfo(string AuthTokenOFD, string CompanyInn, string kktSn, string FnSn, string RegNumber)
         {
             if (string.IsNullOrEmpty(AuthTokenOFD.ToString())
                 || string.IsNullOrEmpty(CompanyInn)
